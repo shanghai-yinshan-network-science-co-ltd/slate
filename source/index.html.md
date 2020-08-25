@@ -6,8 +6,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - java
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
+  - Pyxis credit scoring.
 
 includes:
   - errors
@@ -32,7 +31,7 @@ Make sure you have your right <code>personal API key</code>.
 ## behavior scoring
 
 ```python
-import izi
+import pyxis.credit
 
 api = credit_scoring.client('YOUR_ACCESS_KEY', 'YOUR_SECRET_KEY')
 data = {
@@ -75,9 +74,12 @@ print(response)
 ```
 
 ```java
-import java.util.HashMap;
-import java.util.Map;
-import credit.izi.Client;
+import java.util.*;
+import com.pyxis.credit.Client;
+import com.pyxis.credit.CheckRequest;
+import com.pyxis.credit.CheckResponse;
+import com.pyxis.credit.EventLog;
+
 
 public class MainClass {
     public static void main(String[] args) {
@@ -122,8 +124,6 @@ public class MainClass {
   "score": 800
 }
 ```
-
-This endpoint retrieves all kittens.
 
 ### HTTP Request
 
